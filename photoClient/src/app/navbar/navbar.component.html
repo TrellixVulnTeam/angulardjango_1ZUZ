@@ -1,0 +1,17 @@
+<mat-toolbar  color="primary">
+  <mat-toolbar-row>
+      <button mat-button routerLink = '/login'><img class="logo" [src]="logo"/></button>
+    <span style = "flex: 1 1 auto;"></span>
+
+    <button  mat-button routerLink="/login">Log in</button>
+    <button  mat-button routerLink="/register">Register</button>
+
+
+    <!--<button *ngIf="apiService.LoggedIn()" class="nav-div" mat-button [matMenuTriggerFor]="menu">{{apiService.getUserName()}}</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item><a routerLink="/dashboard">Dashboard</a></button>
+      <button mat-menu-item><a *ngIf="apiService.LoggedIn()"  (click)="apiService.logout()">Log out</a> </button>
+    </mat-menu>-->
+  </mat-toolbar-row>
+</mat-toolbar>
+

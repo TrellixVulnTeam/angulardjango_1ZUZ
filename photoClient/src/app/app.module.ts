@@ -11,7 +11,6 @@ import {
   MatButtonModule,
   MatCardModule,
   MatToolbarModule,
-  MatInputModule,
   MatMenuModule,
   MatTableModule,
   MatPaginatorModule,
@@ -19,9 +18,18 @@ import {
   MatDialogModule
  } from '@angular/material';
 
+import {MatInputModule} from '@angular/material/input';
+
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegisterComponent,
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
